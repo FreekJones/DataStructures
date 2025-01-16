@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>  //<string.h> is the c sting library (not this)
-#include <person.h>
 using namespace std; //
 
 int main()
@@ -38,12 +37,6 @@ int main()
     c_string2 = cpp_string.c_str();  //c_str() is a method of the string class that returns a c-style string
 
     
-    Person p;
-    Person q;
-    p.id = 42;
-    p.first_name = "Bob";
-    q.id = 43;
-    q.first_name = "Sally";
 
 }
 
