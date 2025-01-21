@@ -21,6 +21,12 @@ public:
 	//This is another CONSTRUCTOR
 	Person(int start_id, std::string start_fname, std::string start_lname);
 
+	//This is a DESTRUCTOR -- a method that is called when an instance of the class is about to go away
+	// It is unusual to call this manually.  More often, it's called when an instance goes out of scope(scope is where that
+	// variable is visible, or is defined)  Do any kind of cleanup you wish.  Biggie: if you dynamically allocated memory, this
+	// is a good place to clean it up. 
+	~Person();
+
 	float calculate_pay();
 
 	//These are SETTERS -- methods that allow us to change the values of the attributes

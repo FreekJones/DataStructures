@@ -1,6 +1,7 @@
 // person.cpp --- houses the BODIES(DEFINITIONS) of all methods
 
 #include <person.h>
+#include <iostream>
 
 // General structure: ReturnType  ClassName::MethodName(Parameters)   { . . . . }
 
@@ -38,6 +39,11 @@ Person::Person(int start_id, std::string start_fname, std::string start_lname)
 	hours_worked = 0;
 }
 
+Person::~Person()
+{
+	std::cout << "The person named " << first_name << " " << last_name << " is about to go away.\n";
+}
+
 int Person::get_id()
 {
 	return id;
@@ -52,4 +58,19 @@ std::string Person::get_last_name()
 {
 	return last_name;
 }
+
+float Person::get_hourly_rate()
+{
+	return hourly_rate;
+}
+
+
+unsigned int Person::get_hours_worked()
+{
+	return hours_worked;
+}
+
+
+
+
 
