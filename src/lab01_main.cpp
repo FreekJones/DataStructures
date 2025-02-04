@@ -2,8 +2,8 @@
 
 
 /// <summary>
-/// main function that runs the program
-/// allows users to add, remove, and print people from the database
+/// Main function that runs the program.
+/// Allows users to add, remove, and print people from the database
 /// </summary>
 int main() 
 {

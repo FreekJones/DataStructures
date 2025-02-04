@@ -9,7 +9,7 @@
 #include <stdexcept>
 
 /// <summary>
-/// namespace example is used to define the class PersonDatabase and its methods.
+/// Namespace example is used to define the class PersonDatabase and its methods.
 /// </summary>
 namespace example
 {

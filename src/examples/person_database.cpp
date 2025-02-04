@@ -7,7 +7,7 @@
 
 
 /// <summary>
-/// constructs a PersonDatabase object and loads the database from a file
+/// Constructs a PersonDatabase object and loads the database from a file
 /// </summary>
 example::PersonDatabase::PersonDatabase(std::string fname) //constructor
 {
@@ -34,7 +34,7 @@ example::PersonDatabase::PersonDatabase(std::string fname) //constructor
 }
 
 /// <summary>
-/// destructor that saves all stored data to the file before deallocating the memory
+/// Destructor that saves all stored data to the file before deallocating the memory
 /// </summary>
 example::PersonDatabase::~PersonDatabase()             //destructor
 {	       
@@ -54,7 +54,7 @@ example::PersonDatabase::~PersonDatabase()             //destructor
 }
 
 /// <summary>
-/// adds a new person to the database and throws an exception if the ID already exists
+/// Adds a new person to the database and throws an exception if the ID already exists
 /// </summary>
 void example::PersonDatabase::add_person(example::Person new_person)           //add a person to the database
 {     
@@ -78,7 +78,7 @@ void example::PersonDatabase::add_person(example::Person new_person)           /
 }
 
 /// <summary>
-/// removes a person from the database by ID if it exists
+/// Removes a person from the database by ID if it exists
 /// </summary>
 /// <returns> TRUE if the person was removed, otherwise FALSE </returns>
 bool example::PersonDatabase::remove_person(int id)         //remove a person from the database
@@ -105,19 +105,19 @@ bool example::PersonDatabase::remove_person(int id)         //remove a person fr
 }
 
 /// <summary>
-/// returns the number of people in the database
+/// Returns the number of people in the database
 /// </summary>
-/// <returns> the number of people in the database </returns>
+/// <returns> The number of people in the database </returns>
 int example::PersonDatabase::get_num_people()           //return the number of people in the database
 {         
 	return person_array_size;                           //return the number of people
 } 
 
 /// <summary>
-/// generates a formatted string report of the database including a total of all salaries
+/// Generates a formatted string report of the database including a total of all salaries
 /// the formatting automatically adjusts to the longest name
 /// </summary>
-/// <returns> a string containing all the data in the database </returns>
+/// <returns> A string containing all the data in the database </returns>
 std::string example::PersonDatabase::to_string()
 {
     std::stringstream report;

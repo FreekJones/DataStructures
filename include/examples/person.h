@@ -6,40 +6,40 @@
 #include <string>
 
 /// <summary>
-/// the example namespace is used to define the class Person and its methods
+/// The example namespace is used to define the class Person and its methods
 /// </summary>
 namespace example
 { 
 	/// <summary>
-	/// creates a class called Person that has the attributes id, first_name, last_name, hourly_rate, and hours_worked
-	/// the class also has methods to calculate pay, set and get the values of the attributes, and a constructor and destructor
+	/// Creates a class called Person that has the attributes id, first_name, last_name, hourly_rate, and hours_worked.
+	/// The class also has methods to calculate pay, set and get the values of the attributes, and a constructor and destructor
 	/// </summary>
 	class Person
 	{
 	private:		//This is an ACCESS MODIFIER -- it makes the following attributes and methods public (accessible from outside the class)
 
 		/// <summary>
-		/// the id of the person
+		/// The ID of the person
 		/// </summary>
 		int id;		//These are attributes -- variables that each instance of the class will get a copy of
 
 		/// <summary>
-		/// the first name of the person
+		/// The first name of the person
 		/// </summary>
 		std::string first_name;   //By default, these are private (we can only access them in a method)
 
 		/// <summary>
-		/// the last name of the person
+		/// The last name of the person
 		/// </summary>
 		std::string last_name;
 
 		/// <summary>
-		/// the hourly rate of the person
+		/// The hourly rate of the person
 		/// </summary>
 		float hourly_rate;
 
 		/// <summary>
-		/// the number of hours worked by the person
+		/// The number of hours worked by the person
 		/// </summary>
 		unsigned int hours_worked;
 
@@ -48,16 +48,16 @@ namespace example
 		//This is a METHOD -- a function that all instances of the class can use.  This is a DECLARATION
 		
 		/// <summary>
-		/// constructor that initializes the person 
+		/// Constructor that initializes the person 
 		/// </summary>
 		Person();
 
 		/// <summary>
-		/// constructor that initializes the person with the given id, first name, and last name
+		/// Constructor that initializes the person with the given id, first name, and last name
 		/// </summary>
-		/// <param name="start_id"> the id of the person </param>
-		/// <param name="start_fname"> the first name of the person </param>
-		/// <param name="start_lname"> the last name of the person </param>
+		/// <param name="start_id"> The id of the person </param>
+		/// <param name="start_fname"> The first name of the person </param>
+		/// <param name="start_lname"> The last name of the person </param>
 		Person(int start_id, std::string start_fname, std::string start_lname);
 
 		//This is a DESTRUCTOR -- a method that is called when an instance of the class is about to go away
@@ -66,60 +66,60 @@ namespace example
 		// is a good place to clean it up. 
 
 		/// <summary>
-		/// destructor that is used for cleanup
+		/// Destructor that is used for cleanup
 		/// </summary>
 		~Person();
 
 		/// <summary>
-		/// calculates the total pay of the person by using the hourly rate and hours worked
+		/// Calculates the total pay of the person by using the hourly rate and hours worked
 		/// </summary>
-		/// <returns> total pay of the person </returns>
+		/// <returns> Total pay of the person </returns>
 		float calculate_pay();
 
 		//These are SETTERS -- methods that allow us to change the values of the attributes
 
 		/// <summary>
-		/// sets the hourly rate of the person
+		/// Sets the hourly rate of the person
 		/// </summary>
-		/// <param name="new_rate"> the new hourly rate of the person </param>
+		/// <param name="new_rate"> The new hourly rate of the person </param>
 		void set_hourly_rate(float new_rate);	
 
 		/// <summary>
-		/// sets the number of hours worked by the person
+		/// Sets the number of hours worked by the person
 		/// </summary>
-		/// <param name="new_hours"> the new hours worked by the person </param>
+		/// <param name="new_hours"> The new hours worked by the person </param>
 		void set_hours_worked(unsigned int new_hours);	
 
 		//These are examples of GETTERS -- methods that allow us to access the values of the attributes
 
 		/// <summary>
-		/// gets the ID of the person
+		/// Gets the ID of the person
 		/// </summary>
-		/// <returns> the person's ID </returns>
+		/// <returns> The person's ID </returns>
 		int get_id();
 
 		/// <summary>
-		/// gets the first name of the person
+		/// Gets the first name of the person
 		/// </summary>
-		/// <returns> the first name of the person </returns>
+		/// <returns> The first name of the person </returns>
 		std::string get_first_name();
 
 		/// <summary>
-		/// gets the last name of the person
+		/// Gets the last name of the person
 		/// </summary>
-		/// <returns> the last name of the person </returns>
+		/// <returns> The last name of the person </returns>
 		std::string get_last_name();	
 
 		/// <summary>
-		/// gets the hourly rate of the person
+		/// Gets the hourly rate of the person
 		/// </summary>
-		/// <returns> the hourly rate of the person </returns>
+		/// <returns> The hourly rate of the person </returns>
 		float get_hourly_rate();
 
 		/// <summary>
-		/// gets the number of hours worked by the person
+		/// Gets the number of hours worked by the person
 		/// </summary>
-		/// <returns> the number of hours worked by the person </returns>
+		/// <returns> The number of hours worked by the person </returns>
 		unsigned int get_hours_worked();	
 
 	};

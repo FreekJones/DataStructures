@@ -2,9 +2,9 @@
 #include <person.h>
 
 /// <summary>
-/// calculates the total pay of the person by using the hourly rate and hours worked
+/// Calculates the total pay of the person by using the hourly rate and hours worked
 /// </summary>
-/// <returns> the total earnings of the person </returns>
+/// <returns> The total earnings of the person </returns>
 float example::Person::calculate_pay()
 {
 	// We have access to all attributes since we're a part of the class
@@ -12,7 +12,7 @@ float example::Person::calculate_pay()
 }
 
 /// <summary>
-/// sets the hourly rate of the person
+/// Sets the hourly rate of the person
 /// </summary>
 void example::Person::set_hourly_rate(float new_rate)
 {
@@ -20,7 +20,7 @@ void example::Person::set_hourly_rate(float new_rate)
 }
 
 /// <summary>
-/// sets the number of hours worked by the person
+/// Sets the number of hours worked by the person
 /// </summary>
 void example::Person::set_hours_worked(unsigned int new_hours)
 {
@@ -28,7 +28,7 @@ void example::Person::set_hours_worked(unsigned int new_hours)
 }
 
 /// <summary>
-/// default constructor that initializes the person's attributes to default values
+/// Default constructor that initializes the person's attributes to default values
 /// </summary>
 example::Person::Person()
 {
@@ -40,7 +40,7 @@ example::Person::Person()
 }
 
 /// <summary>
-/// constructor that initializes the person's attributes to the given values
+/// Constructor that initializes the person's attributes to the given values
 /// </summary>
 example::Person::Person(int start_id, std::string start_fname, std::string start_lname)
 {
@@ -52,20 +52,20 @@ example::Person::Person(int start_id, std::string start_fname, std::string start
 }
 
 /// <summary>
-/// destructor that is used for cleanup
+/// Destructor that is used for cleanup
 /// </summary>
 example::Person::~Person()
 {
 //	std::cout << "The person named " << first_name << " " << last_name << " is about to go away.\n";
 
 
-	// This is where you would do any cleanup
+	//this is where you would do any cleanup
 }
 
 /// <summary>
-/// gets the ID of the person
+/// Gets the ID of the person
 /// </summary>
-/// <returns> the ID of the person </returns>
+/// <returns> The ID of the person </returns>
 int example::Person::get_id()
 {
 	return id;
@@ -73,36 +73,36 @@ int example::Person::get_id()
 
 
 /// <summary>
-/// gets the first name of the person
+/// Gets the first name of the person
 /// </summary>
-/// <returns> the first name of the person </returns>
+/// <returns> The first name of the person </returns>
 std::string example::Person::get_first_name()
 {
 	return first_name;
 }
 
 /// <summary>
-/// gets the last name of the person
+/// Gets the last name of the person
 /// </summary>
-/// <returns> the last name of the person </returns>
+/// <returns> The last name of the person </returns>
 std::string example::Person::get_last_name()
 {
 	return last_name;
 }
 
 /// <summary>
-/// gets the hourly rate of the person
+/// Gets the hourly rate of the person
 /// </summary>
-/// <returns> the hourly rate of the person </returns>
+/// <returns> The hourly rate of the person </returns>
 float example::Person::get_hourly_rate()
 {
 	return hourly_rate;
 }
 
 /// <summary>
-/// gets the number of hours worked by the person
+/// Gets the number of hours worked by the person
 /// </summary>
-/// <returns> the number of hours worked by the person </returns>
+/// <returns> The number of hours worked by the person </returns>
 unsigned int example::Person::get_hours_worked()
 {
 	return hours_worked;
