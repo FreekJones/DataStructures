@@ -4,28 +4,28 @@
 
 void func()
 {
-	Person a(45, "Sally", "Smith");
+	example::Person a(45, "Sally", "Smith");
 	std::cout << "Doing something...\n";
 }
 
 int main(int argc, char** argv)
 {
 	//making two instances (or object) of the person class
-	Person p(42, "Bob", "Jones");  //using the "real" constructor
-	Person q;  // using the default constructor
+	example::Person p(42, "Bob", "Jones");  //using the "real" constructor
+	example::Person q;  // using the default constructor
 
 	p.set_hourly_rate(13.5f);
 	p.set_hours_worked(17);
 
 	func();
 
-	Person* pptr;             // Declaring a pointer to a Person(not a person)
+	example::Person* pptr;             // Declaring a pointer to a Person(not a person)
 							  //uninitialized at the moment;
 	pptr = NULL;   // NULL is a special value that means "nothing"
 	int x = NULL;
 	pptr = nullptr;  //like NULL but can only be assigned to pointer types
 	
-	pptr = new Person(46, "Jim", "Price"); //new is like malloc in c++ - it allocates memory on the heap - Returns a pointer to a person
+	pptr = new example::Person(46, "Jim", "Price"); //new is like malloc in c++ - it allocates memory on the heap - Returns a pointer to a person
 						                   //malloc doesn't do anything with constructors or destructors
 	// Examples of DE-REFERENCING a pointer
 	pptr->set_hourly_rate(11.3f);
@@ -38,7 +38,7 @@ int main(int argc, char** argv)
 
 	pptr = nullptr;
 
-	pptr = new Person(47, "Julia", "Young");
+	pptr = new example::Person(47, "Julia", "Young");
 	pptr->set_hourly_rate(14.5f);
 	delete pptr;   //This calls the destructor and frees up the memory
 				   //pointed to by pptr.  

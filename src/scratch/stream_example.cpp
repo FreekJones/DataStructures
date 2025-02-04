@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <iomanip>
 
 #define DO_FILE_OUTPUT 0
 
@@ -72,7 +73,35 @@ int main(int argc, char** argv)
 
 	std::getline(fp, temp_line);
 	std::cout << "Line2=" << temp_line << "\n";
+	
+	
+	// Read in all data from the file
 
+	int new_id;
+	float new_rate;
+	unsigned int new_hours;
+	std::string new_fname, new_lname;
+
+	std::cout << std::fixed << std::setprecision(2);
+
+	while (true)
+	{
+		// When we test for end-of file (technically only when we try to read PAST the end)
+		// So generally, you'll read a bit, then see if we are now at the end.
+		fp >> new_id >> new_fname >> new_lname >> new_rate >> new_hours;
+		if (fp.eof())
+			break; //If we are at the end of the file, then break
+		else if (fp.fail())
+			std::cout << "Error reading data\n";
+		//Do something with the data (you'll put in an array) -- we'll just print
+		std::cout << "Got Person\n\tid=" << new_id << "\n\tfname='" << new_fname;
+		std::cout << "\n\tlname='" << new_lname << "\n\trate=$" << new_rate << "\n\thours=";
+		std::cout << new_hours << "\n";
+	}
+
+
+	
+	fp.close();
 #endif
 
 	return 0;

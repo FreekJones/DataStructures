@@ -12,10 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\examples\person.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\src\examples\person.cpp" />
-    <ClCompile Include="..\src\scratch\stream_example.cpp" />
+    <ClInclude Include="..\include\examples\person_database.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -23,6 +20,7 @@
     <ProjectGuid>{06bab623-79df-4b7d-9ea4-41c2846a1441}</ProjectGuid>
     <RootNamespace>scratch</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>scratch</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
