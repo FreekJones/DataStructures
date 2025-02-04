@@ -6,7 +6,7 @@
 #include <string>
 
 /// <summary>
-/// The example namespace is used to define the class Person and its methods
+/// The example namespace is used to define the Person class and PersonDatabase class as well as their methods.
 /// </summary>
 namespace example
 { 

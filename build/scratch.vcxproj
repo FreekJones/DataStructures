@@ -14,6 +14,11 @@
     <ClInclude Include="..\include\examples\person.h" />
     <ClInclude Include="..\include\examples\person_database.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\examples\person.cpp" />
+    <ClCompile Include="..\src\examples\person_database.cpp" />
+    <ClCompile Include="..\src\lab01_main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
