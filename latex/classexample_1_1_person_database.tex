@@ -1,0 +1,171 @@
+\doxysection{example\+::Person\+Database Class Reference}
+\hypertarget{classexample_1_1_person_database}{}\label{classexample_1_1_person_database}\index{example::PersonDatabase@{example::PersonDatabase}}
+
+
+The class \doxylink{classexample_1_1_person_database}{Person\+Database} represents a database of \doxylink{classexample_1_1_person}{Person} objects that is dynamically allocated and can be saved to and loaded from a file. It has methods to add and remove people from the database. It also has a method to return a string representation of the database called to\+\_\+string.  
+
+
+
+
+{\ttfamily \#include $<$person\+\_\+database.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classexample_1_1_person_database_a6372c89d5b02fb14bdf6c3c70591c324}{Person\+Database}} (std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classexample_1_1_person_database}{Person\+Database} object and loads the database from a file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classexample_1_1_person_database_a84558db880f925669f94925eb06ea1e2}{\texorpdfstring{$\sim$}{\string~}\+Person\+Database}} ()
+\begin{DoxyCompactList}\small\item\em Destructor that saves all stored data to the file before deallocating the memory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classexample_1_1_person_database_ad577f6af394e62fd024149d3b2159cb9}{add\+\_\+person}} (\mbox{\hyperlink{classexample_1_1_person}{Person}} new\+\_\+person)
+\begin{DoxyCompactList}\small\item\em add\+\_\+person method that adds a person to the database ensuring no duplicate ID exists. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classexample_1_1_person_database_a4d44bafaa10424909b770414c6aa392c}{remove\+\_\+person}} (int id)
+\begin{DoxyCompactList}\small\item\em remove\+\_\+person method that removes a person from the database. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classexample_1_1_person_database_a795f12313afb929807ed49ddf0986023}{get\+\_\+num\+\_\+people}} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+num\+\_\+people method that returns the number of people in the database. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classexample_1_1_person_database_ad4c45ca3c7c3f83e94f43c0df0cbb55a}{to\+\_\+string}} ()
+\begin{DoxyCompactList}\small\item\em to\+\_\+string is a method that returns a string representation of \doxylink{classexample_1_1_person_database}{Person\+Database}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class \doxylink{classexample_1_1_person_database}{Person\+Database} represents a database of \doxylink{classexample_1_1_person}{Person} objects that is dynamically allocated and can be saved to and loaded from a file. It has methods to add and remove people from the database. It also has a method to return a string representation of the database called to\+\_\+string. 
+
+Definition at line \mbox{\hyperlink{person__database_8h_source_l00021}{21}} of file \mbox{\hyperlink{person__database_8h_source}{person\+\_\+database.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classexample_1_1_person_database_a6372c89d5b02fb14bdf6c3c70591c324}\index{example::PersonDatabase@{example::PersonDatabase}!PersonDatabase@{PersonDatabase}}
+\index{PersonDatabase@{PersonDatabase}!example::PersonDatabase@{example::PersonDatabase}}
+\doxysubsubsection{\texorpdfstring{PersonDatabase()}{PersonDatabase()}}
+{\footnotesize\ttfamily \label{classexample_1_1_person_database_a6372c89d5b02fb14bdf6c3c70591c324} 
+example\+::\+Person\+Database\+::\+Person\+Database (\begin{DoxyParamCaption}\item[{std\+::string}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{classexample_1_1_person_database}{Person\+Database} object and loads the database from a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The path to the file containing the person data \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{person__database_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{person__database_8cpp_source}{person\+\_\+database.\+cpp}}.
+
+\Hypertarget{classexample_1_1_person_database_a84558db880f925669f94925eb06ea1e2}\index{example::PersonDatabase@{example::PersonDatabase}!````~PersonDatabase@{\texorpdfstring{$\sim$}{\string~}PersonDatabase}}
+\index{````~PersonDatabase@{\texorpdfstring{$\sim$}{\string~}PersonDatabase}!example::PersonDatabase@{example::PersonDatabase}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}PersonDatabase()}{\string~PersonDatabase()}}
+{\footnotesize\ttfamily \label{classexample_1_1_person_database_a84558db880f925669f94925eb06ea1e2} 
+example\+::\+Person\+Database\+::\texorpdfstring{$\sim$}{\string~}\+Person\+Database (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor that saves all stored data to the file before deallocating the memory. 
+
+Destroys the \doxylink{classexample_1_1_person_database}{Person\+Database} object, saving all stored data to the file before deallocating memory. 
+
+Definition at line \mbox{\hyperlink{person__database_8cpp_source_l00039}{39}} of file \mbox{\hyperlink{person__database_8cpp_source}{person\+\_\+database.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classexample_1_1_person_database_ad577f6af394e62fd024149d3b2159cb9}\index{example::PersonDatabase@{example::PersonDatabase}!add\_person@{add\_person}}
+\index{add\_person@{add\_person}!example::PersonDatabase@{example::PersonDatabase}}
+\doxysubsubsection{\texorpdfstring{add\_person()}{add\_person()}}
+{\footnotesize\ttfamily \label{classexample_1_1_person_database_ad577f6af394e62fd024149d3b2159cb9} 
+void example\+::\+Person\+Database\+::add\+\_\+person (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classexample_1_1_person}{example\+::\+Person}}}]{new\+\_\+person}{}\end{DoxyParamCaption})}
+
+
+
+add\+\_\+person method that adds a person to the database ensuring no duplicate ID exists. 
+
+Adds a new person to the database and throws an exception if the ID already exists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+person} & The \doxylink{classexample_1_1_person}{Person} object to be added to the database \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{person__database_8cpp_source_l00059}{59}} of file \mbox{\hyperlink{person__database_8cpp_source}{person\+\_\+database.\+cpp}}.
+
+\Hypertarget{classexample_1_1_person_database_a795f12313afb929807ed49ddf0986023}\index{example::PersonDatabase@{example::PersonDatabase}!get\_num\_people@{get\_num\_people}}
+\index{get\_num\_people@{get\_num\_people}!example::PersonDatabase@{example::PersonDatabase}}
+\doxysubsubsection{\texorpdfstring{get\_num\_people()}{get\_num\_people()}}
+{\footnotesize\ttfamily \label{classexample_1_1_person_database_a795f12313afb929807ed49ddf0986023} 
+int example\+::\+Person\+Database\+::get\+\_\+num\+\_\+people (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+get\+\_\+num\+\_\+people method that returns the number of people in the database. 
+
+Returns the number of people in the database.
+
+\begin{DoxyReturn}{Returns}
+The number of people in the database 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{person__database_8cpp_source_l00111}{111}} of file \mbox{\hyperlink{person__database_8cpp_source}{person\+\_\+database.\+cpp}}.
+
+\Hypertarget{classexample_1_1_person_database_a4d44bafaa10424909b770414c6aa392c}\index{example::PersonDatabase@{example::PersonDatabase}!remove\_person@{remove\_person}}
+\index{remove\_person@{remove\_person}!example::PersonDatabase@{example::PersonDatabase}}
+\doxysubsubsection{\texorpdfstring{remove\_person()}{remove\_person()}}
+{\footnotesize\ttfamily \label{classexample_1_1_person_database_a4d44bafaa10424909b770414c6aa392c} 
+bool example\+::\+Person\+Database\+::remove\+\_\+person (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+
+
+remove\+\_\+person method that removes a person from the database. 
+
+Removes a person from the database by ID if it exists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the person to be removed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns TRUE if successfully removed, else returns FALSE 
+\end{DoxyReturn}
+
+
+\begin{DoxyReturn}{Returns}
+TRUE if the person was removed, otherwise FALSE 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{person__database_8cpp_source_l00084}{84}} of file \mbox{\hyperlink{person__database_8cpp_source}{person\+\_\+database.\+cpp}}.
+
+\Hypertarget{classexample_1_1_person_database_ad4c45ca3c7c3f83e94f43c0df0cbb55a}\index{example::PersonDatabase@{example::PersonDatabase}!to\_string@{to\_string}}
+\index{to\_string@{to\_string}!example::PersonDatabase@{example::PersonDatabase}}
+\doxysubsubsection{\texorpdfstring{to\_string()}{to\_string()}}
+{\footnotesize\ttfamily \label{classexample_1_1_person_database_ad4c45ca3c7c3f83e94f43c0df0cbb55a} 
+std\+::string example\+::\+Person\+Database\+::to\+\_\+string (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+to\+\_\+string is a method that returns a string representation of \doxylink{classexample_1_1_person_database}{Person\+Database}. 
+
+Generates a formatted string report of the database including a total of all salaries the formatting automatically adjusts to the longest name.
+
+\begin{DoxyReturn}{Returns}
+A string containing a formatted representation of all stored people in the database 
+\end{DoxyReturn}
+
+
+\begin{DoxyReturn}{Returns}
+A string containing all the data in the database 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{person__database_8cpp_source_l00121}{121}} of file \mbox{\hyperlink{person__database_8cpp_source}{person\+\_\+database.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/examples/person\+\_\+database.\+h\item 
+src/examples/person\+\_\+database.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\doxysection{person.\+h}
+\hypertarget{person_8h_source}{}\label{person_8h_source}\index{include/examples/person.h@{include/examples/person.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00001}00001\ \textcolor{comment}{//\#pragma\ once\ does\ the\ same\ thing\ as\ the\ compiler\ guard}}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00003}00003\ \textcolor{preprocessor}{\#ifndef\ \_PERSON\_H\_\ \ \ \ }\textcolor{comment}{//"{}compiler\ guard"{}\ -\/\ prevents\ the\ file\ from\ being\ included\ more\ than\ once}}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00004}00004\ \textcolor{preprocessor}{\#define\ \_PERSON\_H\_\ \ \ \ }\textcolor{comment}{//header\ file\ and\ the\ stuff\ within\ it\ is\ only\ included\ once}}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00011}\mbox{\hyperlink{namespaceexample}{00011}}\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceexample}{example}}}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00012}00012\ \{\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00017}\mbox{\hyperlink{classexample_1_1_person}{00017}}\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classexample_1_1_person_a13cef9dd175bcc612ae4fca575f91bc5}{Person}}}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00018}00018\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00019}00019\ \ \ \ \ \textcolor{keyword}{private}:\ \ \ \ \ \ \ \ \textcolor{comment}{//This\ is\ an\ ACCESS\ MODIFIER\ -\/-\/\ it\ makes\ the\ following\ attributes\ and\ methods\ public\ (accessible\ from\ outside\ the\ class)}}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ id;\ \ \ \ \ \textcolor{comment}{//These\ are\ attributes\ -\/-\/\ variables\ that\ each\ instance\ of\ the\ class\ will\ get\ a\ copy\ of}}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00029}00029\ \ \ \ \ \ \ \ \ std::string\ first\_name;\ \ \ \textcolor{comment}{//By\ default,\ these\ are\ private\ (we\ can\ only\ access\ them\ in\ a\ method)}}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00034}00034\ \ \ \ \ \ \ \ \ std::string\ last\_name;}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00039}00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ hourly\_rate;}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00044}00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ hours\_worked;}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00046}00046\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00047}00047\ \ \ \ \ \ \ \ \ \textcolor{comment}{//This\ is\ the\ CONSTRUCTOR\ -\/-\/\ a\ special\ method\ that\ has\ no\ return\ type\ and\ MUST\ have\ the\ same\ name\ as\ the\ class}}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00048}00048\ \ \ \ \ \ \ \ \ \textcolor{comment}{//This\ is\ a\ METHOD\ -\/-\/\ a\ function\ that\ all\ instances\ of\ the\ class\ can\ use.\ \ This\ is\ a\ DECLARATION}}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00049}00049\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00053}00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classexample_1_1_person_a13cef9dd175bcc612ae4fca575f91bc5}{Person}}();}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00061}00061\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classexample_1_1_person_a13cef9dd175bcc612ae4fca575f91bc5}{Person}}(\textcolor{keywordtype}{int}\ start\_id,\ std::string\ start\_fname,\ std::string\ start\_lname);}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00063}00063\ \ \ \ \ \ \ \ \ \textcolor{comment}{//This\ is\ a\ DESTRUCTOR\ -\/-\/\ a\ method\ that\ is\ called\ when\ an\ instance\ of\ the\ class\ is\ about\ to\ go\ away}}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00064}00064\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ It\ is\ unusual\ to\ call\ this\ manually.\ \ More\ often,\ it's\ called\ when\ an\ instance\ goes\ out\ of\ scope(scope\ is\ where\ that}}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00065}00065\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ variable\ is\ visible,\ or\ is\ defined)\ \ Do\ any\ kind\ of\ cleanup\ you\ wish.\ \ Biggie:\ if\ you\ dynamically\ allocated\ memory,\ this}}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00066}00066\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ is\ a\ good\ place\ to\ clean\ it\ up.\ }}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00071}00071\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classexample_1_1_person_ab88de04d70f4615a3563ae51ea611af6}{\string~Person}}();}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00077}00077\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classexample_1_1_person_a1010e084e4a9eca4936cccbd6a9c9c05}{calculate\_pay}}();}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00079}00079\ \ \ \ \ \ \ \ \ \textcolor{comment}{//These\ are\ SETTERS\ -\/-\/\ methods\ that\ allow\ us\ to\ change\ the\ values\ of\ the\ attributes}}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00085}00085\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classexample_1_1_person_ad0ad10f90eecc3bf9222c67d0d3296b0}{set\_hourly\_rate}}(\textcolor{keywordtype}{float}\ new\_rate);\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00091}00091\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classexample_1_1_person_a50c9a7f8826cd6da9bfca50ac66e5f79}{set\_hours\_worked}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ new\_hours);\ \ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00092}00092\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00093}00093\ \ \ \ \ \ \ \ \ \textcolor{comment}{//These\ are\ examples\ of\ GETTERS\ -\/-\/\ methods\ that\ allow\ us\ to\ access\ the\ values\ of\ the\ attributes}}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00099}00099\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classexample_1_1_person_aa7fa0078276a5310e9fce342deaf4090}{get\_id}}();}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00100}00100\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00105}00105\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classexample_1_1_person_acc7c6c1c1a81867676b7a9980e7a3dfa}{get\_first\_name}}();}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00111}00111\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classexample_1_1_person_a5a0b466aa90d254ca9d4e78defc6ffb2}{get\_last\_name}}();\ \ \ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00112}00112\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00117}00117\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classexample_1_1_person_a298e151e73341ed8fb58697fc292e0fb}{get\_hourly\_rate}}();}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00118}00118\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00123}00123\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classexample_1_1_person_a0f145ab5b49d1036439543a8a815b25b}{get\_hours\_worked}}();\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00124}00124\ }
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00125}00125\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00126}00126\ \}}
+\DoxyCodeLine{\Hypertarget{person_8h_source_l00127}00127\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

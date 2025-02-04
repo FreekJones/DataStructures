@@ -1,0 +1,110 @@
+\doxysection{lab01\+\_\+main.\+cpp}
+\hypertarget{lab01__main_8cpp_source}{}\label{lab01__main_8cpp_source}\index{src/lab01\_main.cpp@{src/lab01\_main.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <person\_database.h>}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00008}00008\ \textcolor{keywordtype}{int}\ main()\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00009}00009\ \{}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00010}00010\ \ \ \ \ \mbox{\hyperlink{classexample_1_1_person_database}{example::PersonDatabase}}\ db(\textcolor{stringliteral}{"{}../../media/person\_data.txt"{}});\ \ \ \textcolor{comment}{//create\ a\ PersonDatabase\ object\ and\ load\ the\ database\ from\ a\ file}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00012}00012\ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00013}00013\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00014}00014\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nMenu:\(\backslash\)n1.\ Add\ Person\(\backslash\)n2.\ Remove\ Person\(\backslash\)n3.\ Print\ Database\(\backslash\)n4.\ Quit\(\backslash\)n"{}};\ \ \ \textcolor{comment}{//menu\ to\ prompt\ user\ for\ input}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00015}00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ choice;}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00017}00017\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ your\ choice:\ "{}};}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00018}00018\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (!(std::cin\ >>\ choice))\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//input\ validation}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00019}00019\ \ \ \ \ \ \ \ \ \{\ \ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00020}00020\ \ \ \ \ \ \ \ \ \ \ \ \ std::cin.clear();}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ std::cin.ignore(1000,\ \textcolor{charliteral}{'\(\backslash\)n'});\ \ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ input.\ Please\ enter\ a\ number\ between\ 1\ and\ 4:\ "{}};}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00023}00023\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00025}00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (choice\ ==\ 1)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//if\ user\ chooses\ to\ add\ a\ person}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00026}00026\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ first\_name,\ last\_name;\ \ \ \ \ \ \textcolor{comment}{//variables\ to\ store\ user\ input}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ id;}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ hourly\_rate;}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ hours\_worked;}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ first\ name:\ "{}};\ \ \ \ \ \ \ \ \textcolor{comment}{//get\ the\ person's\ data\ from\ the\ user}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ std::cin\ >>\ first\_name;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ last\ name:\ "{}};}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ std::cin\ >>\ last\_name;}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ ID:\ "{}};\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//gets\ the\ person's\ ID\ from\ the\ user\ with\ input\ validation}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (!(std::cin\ >>\ \textcolor{keywordtype}{id}))\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ \ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cin.clear();}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cin.ignore(1000,\ \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ input.\ Please\ enter\ a\ valid\ ID:\ "{}};}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ hourly\ rate:\ "{}};\ \ \ \ \ \ \ \ \ \textcolor{comment}{//gets\ the\ person's\ hourly\ rate\ from\ the\ user\ with\ input\ validation}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (!(std::cin\ >>\ hourly\_rate))\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ \ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cin.clear();}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cin.ignore(1000,\ \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ input.\ Please\ enter\ a\ valid\ hourly\ rate:\ "{}};}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ hours\ worked:\ "{}};\ \ \ \ \ \ \ \ \ \textcolor{comment}{//gets\ the\ person's\ hours\ worked\ from\ the\ user\ with\ input\ validation}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (!(std::cin\ >>\ hours\_worked))\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ \ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cin.clear();}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cin.ignore(1000,\ \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ input.\ Please\ enter\ a\ valid\ number\ of\ hours:\ "{}};}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classexample_1_1_person}{example::Person}}\ new\_person(\textcolor{keywordtype}{id},\ first\_name,\ last\_name);\ \ \ \ \ \textcolor{comment}{//create\ a\ new\ Person\ object\ with\ the\ user's\ input}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ new\_person.set\_hourly\_rate(hourly\_rate);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//uses\ the\ setter\ methods\ to\ set\ the\ hourly\ rate\ and\ hours\ worked}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ new\_person.set\_hours\_worked(hours\_worked);}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//try\ to\ add\ the\ person\ to\ the\ database}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ db.add\_person(new\_person);\ \ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (std::runtime\_error\ e)\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//if\ the\ ID\ already\ exists,\ catch\ the\ exception\ and\ print\ an\ error\ message}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cerr\ <<\ e.what()\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00073}00073\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00074}00074\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (choice\ ==\ 2)\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00075}00075\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ id;}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ ID\ to\ remove:\ "{}};}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (!(std::cin\ >>\ \textcolor{keywordtype}{id}))\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ \ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cin.clear();}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cin.ignore(1000,\ \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ input.\ Please\ enter\ a\ valid\ ID:\ "{}};}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (db.remove\_person(\textcolor{keywordtype}{id}))\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//if\ the\ ID\ exists,\ remove\ the\ person\ from\ the\ database}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Person\ removed.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00090}00090\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Person\ not\ found.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00093}00093\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00094}00094\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (choice\ ==\ 3)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//print\ the\ database}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00095}00095\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ db.to\_string();\ \ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00097}00097\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00098}00098\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (choice\ ==\ 4)\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00099}00099\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00100}00100\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};\ \ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00101}00101\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00102}00102\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ }
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00103}00103\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00104}00104\ \ \ \ \ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Invalid\ choice.\ Please\ try\ again.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00105}00105\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00106}00106\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00107}00107\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{lab01__main_8cpp_source_l00108}00108\ \}}
+
+\end{DoxyCode}

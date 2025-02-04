@@ -109,7 +109,7 @@ $(function(){initNavTree('classexample_1_1_person_database.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 
-<p>The class <a class="el" href="classexample_1_1_person_database.html" title="The class PersonDatabase represents a database of Person objects that is dynamically allocated and ca...">PersonDatabase</a> represents a database of <a class="el" href="classexample_1_1_person.html" title="creates a class called Person that has the attributes id, first_name, last_name, hourly_rate,...">Person</a> objects that is dynamically allocated and can be saved to and loaded from a file. It has methods to add and remove people from the database. It also has a method to return a string representation of the database called to_string.  
+<p>The class <a class="el" href="classexample_1_1_person_database.html" title="The class PersonDatabase represents a database of Person objects that is dynamically allocated and ca...">PersonDatabase</a> represents a database of <a class="el" href="classexample_1_1_person.html" title="Creates a class called Person that has the attributes id, first_name, last_name, hourly_rate,...">Person</a> objects that is dynamically allocated and can be saved to and loaded from a file. It has methods to add and remove people from the database. It also has a method to return a string representation of the database called to_string.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="person__database_8h_source.html">person_database.h</a>&gt;</code></p>
@@ -120,7 +120,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6372c89d5b02fb14bdf6c3c70591c324"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classexample_1_1_person_database.html" title="The class PersonDatabase represents a database of Person objects that is dynamically allocated and ca...">PersonDatabase</a> object and loads the database from a file.  <br /></td></tr>
 <tr class="separator:a6372c89d5b02fb14bdf6c3c70591c324"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84558db880f925669f94925eb06ea1e2" id="r_a84558db880f925669f94925eb06ea1e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84558db880f925669f94925eb06ea1e2">~PersonDatabase</a> ()</td></tr>
-<tr class="memdesc:a84558db880f925669f94925eb06ea1e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">destructor that saves all stored data to the file before deallocating the memory  <br /></td></tr>
+<tr class="memdesc:a84558db880f925669f94925eb06ea1e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor that saves all stored data to the file before deallocating the memory.  <br /></td></tr>
 <tr class="separator:a84558db880f925669f94925eb06ea1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad577f6af394e62fd024149d3b2159cb9" id="r_ad577f6af394e62fd024149d3b2159cb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad577f6af394e62fd024149d3b2159cb9">add_person</a> (<a class="el" href="classexample_1_1_person.html">Person</a> new_person)</td></tr>
 <tr class="memdesc:ad577f6af394e62fd024149d3b2159cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">add_person method that adds a person to the database ensuring no duplicate ID exists.  <br /></td></tr>
@@ -136,7 +136,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad4c45ca3c7c3f83e94f43c0df0cbb55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The class <a class="el" href="classexample_1_1_person_database.html" title="The class PersonDatabase represents a database of Person objects that is dynamically allocated and ca...">PersonDatabase</a> represents a database of <a class="el" href="classexample_1_1_person.html" title="creates a class called Person that has the attributes id, first_name, last_name, hourly_rate,...">Person</a> objects that is dynamically allocated and can be saved to and loaded from a file. It has methods to add and remove people from the database. It also has a method to return a string representation of the database called to_string. </p>
+<div class="textblock"><p>The class <a class="el" href="classexample_1_1_person_database.html" title="The class PersonDatabase represents a database of Person objects that is dynamically allocated and ca...">PersonDatabase</a> represents a database of <a class="el" href="classexample_1_1_person.html" title="Creates a class called Person that has the attributes id, first_name, last_name, hourly_rate,...">Person</a> objects that is dynamically allocated and can be saved to and loaded from a file. It has methods to add and remove people from the database. It also has a method to return a string representation of the database called to_string. </p>
 
 <p class="definition">Definition at line <a class="el" href="person__database_8h_source.html#l00021">21</a> of file <a class="el" href="person__database_8h_source.html">person_database.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -156,7 +156,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructs a <a class="el" href="classexample_1_1_person_database.html" title="The class PersonDatabase represents a database of Person objects that is dynamically allocated and ca...">PersonDatabase</a> object and loads the database from a file. </p>
-<p>constructs a <a class="el" href="classexample_1_1_person_database.html" title="The class PersonDatabase represents a database of Person objects that is dynamically allocated and ca...">PersonDatabase</a> object and loads the database from a file</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filename</td><td>The path to the file containing the person data </td></tr>
@@ -183,7 +182,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>destructor that saves all stored data to the file before deallocating the memory </p>
+<p>Destructor that saves all stored data to the file before deallocating the memory. </p>
 <p>Destroys the <a class="el" href="classexample_1_1_person_database.html" title="The class PersonDatabase represents a database of Person objects that is dynamically allocated and ca...">PersonDatabase</a> object, saving all stored data to the file before deallocating memory. </p>
 
 <p class="definition">Definition at line <a class="el" href="person__database_8cpp_source.html#l00039">39</a> of file <a class="el" href="person__database_8cpp_source.html">person_database.cpp</a>.</p>
@@ -207,10 +206,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>add_person method that adds a person to the database ensuring no duplicate ID exists. </p>
-<p>adds a new person to the database and throws an exception if the ID already exists</p>
+<p>Adds a new person to the database and throws an exception if the ID already exists.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">new_person</td><td>The <a class="el" href="classexample_1_1_person.html" title="creates a class called Person that has the attributes id, first_name, last_name, hourly_rate,...">Person</a> object to be added to the database </td></tr>
+    <tr><td class="paramname">new_person</td><td>The <a class="el" href="classexample_1_1_person.html" title="Creates a class called Person that has the attributes id, first_name, last_name, hourly_rate,...">Person</a> object to be added to the database </td></tr>
   </table>
   </dd>
 </dl>
@@ -235,9 +234,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>get_num_people method that returns the number of people in the database. </p>
-<p>returns the number of people in the database</p>
+<p>Returns the number of people in the database.</p>
 <dl class="section return"><dt>Returns</dt><dd>The number of people in the database </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>the number of people in the database </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="person__database_8cpp_source.html#l00111">111</a> of file <a class="el" href="person__database_8cpp_source.html">person_database.cpp</a>.</p>
 
@@ -259,7 +257,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>remove_person method that removes a person from the database. </p>
-<p>removes a person from the database by ID if it exists</p>
+<p>Removes a person from the database by ID if it exists.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>The ID of the person to be removed </td></tr>
@@ -289,9 +287,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>to_string is a method that returns a string representation of <a class="el" href="classexample_1_1_person_database.html" title="The class PersonDatabase represents a database of Person objects that is dynamically allocated and ca...">PersonDatabase</a>. </p>
-<p>generates a formatted string report of the database including a total of all salaries the formatting automatically adjusts to the longest name</p>
+<p>Generates a formatted string report of the database including a total of all salaries the formatting automatically adjusts to the longest name.</p>
 <dl class="section return"><dt>Returns</dt><dd>A string containing a formatted representation of all stored people in the database </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>a string containing all the data in the database </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A string containing all the data in the database </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="person__database_8cpp_source.html#l00121">121</a> of file <a class="el" href="person__database_8cpp_source.html">person_database.cpp</a>.</p>
 
