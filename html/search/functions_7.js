@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['remove_0',['remove',['../classssuds_1_1_array_list.html#abfa88e339ab66bab61b172d12814a0aa',1,'ssuds::ArrayList']]],
-  ['remove_5fall_1',['remove_all',['../classssuds_1_1_array_list.html#a4dc7d4db6e15ad5112e776c82d319a8a',1,'ssuds::ArrayList']]],
-  ['remove_5fperson_2',['remove_person',['../classexample_1_1_person_database.html#a4d44bafaa10424909b770414c6aa392c',1,'example::PersonDatabase']]],
-  ['reserve_3',['reserve',['../classssuds_1_1_array_list.html#acfcac2fee6d9073352261353fef1f9be',1,'ssuds::ArrayList']]]
+  ['operator_21_3d_0',['operator!=',['../classssuds_1_1_array_list_1_1_array_list_iterator.html#a1a8587603e2089159ede221302f3369c',1,'ssuds::ArrayList::ArrayListIterator']]],
+  ['operator_2a_1',['operator*',['../classssuds_1_1_array_list_1_1_array_list_iterator.html#a39de701f0efb0415bb468d9597f80781',1,'ssuds::ArrayList::ArrayListIterator']]],
+  ['operator_2b_2',['operator+',['../classssuds_1_1_array_list_1_1_array_list_iterator.html#a41af75c5a501c559f25d355da63427ad',1,'ssuds::ArrayList::ArrayListIterator']]],
+  ['operator_2b_2b_3',['operator++',['../classssuds_1_1_array_list_1_1_array_list_iterator.html#a76c209fddb23cb891c513eb3e13f7d14',1,'ssuds::ArrayList::ArrayListIterator::operator++()'],['../classssuds_1_1_array_list_1_1_array_list_iterator.html#a4ef14ebb848b9f2f93ea791dea01b390',1,'ssuds::ArrayList::ArrayListIterator::operator++(int)']]],
+  ['operator_3d_4',['operator=',['../classssuds_1_1_array_list.html#aab9744f75d50dea7d144f9e53d4e4088',1,'ssuds::ArrayList::operator=()'],['../classssuds_1_1_array_list_1_1_array_list_iterator.html#add4129161b3fabe7b5e39ef589eb1bb4',1,'ssuds::ArrayList::ArrayListIterator::operator=(const ArrayListIterator &amp;other)']]],
+  ['operator_3d_3d_5',['operator==',['../classssuds_1_1_array_list_1_1_array_list_iterator.html#ad28ae6dd5bfe06af7f912c1ddcb37db3',1,'ssuds::ArrayList::ArrayListIterator']]],
+  ['operator_5b_5d_6',['operator[]',['../classssuds_1_1_array_list.html#a690b09d1178b28a1b8b57069d6e7b9bc',1,'ssuds::ArrayList']]]
 ];

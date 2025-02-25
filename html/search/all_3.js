@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['example_0',['example',['../namespaceexample.html',1,'']]]
+  ['datastructures_0',['DataStructures',['../index.html',1,'']]]
 ];

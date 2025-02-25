@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['_7earraylist_0',['~ArrayList',['../classssuds_1_1_array_list.html#a334e1f8861f34a0da7230aeec7571e3c',1,'ssuds::ArrayList']]],
-  ['_7eperson_1',['~Person',['../classexample_1_1_person.html#ab88de04d70f4615a3563ae51ea611af6',1,'example::Person']]],
-  ['_7epersondatabase_2',['~PersonDatabase',['../classexample_1_1_person_database.html#a84558db880f925669f94925eb06ea1e2',1,'example::PersonDatabase']]]
+  ['set_5fhourly_5frate_0',['set_hourly_rate',['../classexample_1_1_person.html#ad0ad10f90eecc3bf9222c67d0d3296b0',1,'example::Person']]],
+  ['set_5fhours_5fworked_1',['set_hours_worked',['../classexample_1_1_person.html#a50c9a7f8826cd6da9bfca50ac66e5f79',1,'example::Person']]],
+  ['size_2',['size',['../classssuds_1_1_array_list.html#adbcd61184deb92c36610e47b91a7b6d5',1,'ssuds::ArrayList']]]
 ];
